@@ -4,7 +4,8 @@
   "description": "minesweeper game",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "npx eslint ./src"
   },
   "author": "mpq",
   "license": "ISC",
@@ -13,9 +14,14 @@
     "@typescript-eslint/parser": "^5.36.2",
     "eslint": "^8.23.0",
     "eslint-plugin-vue": "^9.4.0",
+    "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.3.1",
     "typescript": "^4.8.3",
+    "vue-loader": "^17.0.0",
+    "vue-template-compiler": "^2.7.10",
     "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
     "vue": "^3.2.39"
