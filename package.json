@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "npx eslint ./src"
+    "eslint": "npx eslint ./src",
+	"serve": "npx webpack serve"
   },
   "author": "mpq",
   "license": "ISC",
