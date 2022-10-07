@@ -39,7 +39,7 @@ module.exports = {
 	},
 	plugins: [
 		new VueLoaderPlugin(),
-		new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'public/index.html') }),
+		new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src/index.html') }),
 		new DefinePlugin({
 			__VUE_OPTIONS_API__: false,
 			__VUE_PROD_DEVTOOLS__: false,
