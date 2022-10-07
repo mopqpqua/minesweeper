@@ -1,0 +1,4 @@
+.main-template {
+	display: grid;
+	grid-template-columns: minmax(320px, 1250px);
+}
