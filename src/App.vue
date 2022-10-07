@@ -1,6 +1,7 @@
-<script setup lang="ts">
-</script>
-
 <template>
-	<h1>MINESWEEPER</h1>
+	<BaseTemplate></BaseTemplate>
 </template>
+
+<script setup lang="ts">
+import BaseTemplate from '@templates/base-template';
+</script>
