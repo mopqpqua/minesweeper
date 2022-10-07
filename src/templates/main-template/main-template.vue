@@ -1,8 +1,10 @@
 <template>
-	<div class="base-template">
+	<main class="main-template">
 		<h1>MINESWEEPER</h1>
-	</div>
+	</main>
 </template>
 
 <script setup lang="ts">
 </script>
+
+<style src="./main-template.css"></style>

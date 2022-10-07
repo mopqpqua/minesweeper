@@ -3,5 +3,5 @@
 </template>
 
 <script setup lang="ts">
-import BaseTemplate from '@templates/base-template';
+import BaseTemplate from '@templates/main-template';
 </script>
