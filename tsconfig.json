@@ -14,9 +14,8 @@
 		"types": [
 		],
 		"paths": {
-			"@/*": [
-				"/src/*"
-			]
+			"@/*": ["/src/*"],
+			"@templates/*": ["src/templates/*"]
 		},
 		"lib": [
 			"esnext",
