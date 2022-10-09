@@ -1,7 +1,7 @@
 <template>
-	<BaseTemplate></BaseTemplate>
+	<Game></Game>
 </template>
 
 <script setup lang="ts">
-import BaseTemplate from '@templates/main-template';
+import Game from '@pages/game';
 </script>

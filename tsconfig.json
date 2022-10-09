@@ -15,7 +15,14 @@
 		],
 		"paths": {
 			"@/*": ["/src/*"],
-			"@templates/*": ["src/templates/*"]
+			"@atoms/*": ["src/atoms/*"],
+			"@molecules/*": ["src/molecules/*"],
+			"@organisms/*": ["src/organisms/*"],
+			"@pages/*": ["src/pages/*"],
+			"@templates/*": ["src/templates/*"],
+			"@composables/*": ["src/composables/*"],
+			"@apptypes/*": ["src/apptypes/*"],
+			"@interfaces/*": ["src/interfaces/*"]
 		},
 		"lib": [
 			"esnext",

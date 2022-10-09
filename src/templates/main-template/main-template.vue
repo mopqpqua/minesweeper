@@ -1,6 +1,8 @@
 <template>
 	<main class="main-template">
-		<h1>MINESWEEPER</h1>
+		<slot name="controls"/>
+		<slot name="game-field"/>
+		<slot name="footer"/>
 	</main>
 </template>
 
