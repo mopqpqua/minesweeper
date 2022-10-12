@@ -22,6 +22,8 @@ module.exports = {
         "@typescript-eslint",
     ],
     "rules": {
+		"comma-dangle": ["error", "always-multiline"],
+		"semi": ["error", "always"],
     },
 	"ignorePatterns": ["*.d.ts"],
 }
