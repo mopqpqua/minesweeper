@@ -22,7 +22,8 @@
 			"@templates/*": ["src/templates/*"],
 			"@composables/*": ["src/composables/*"],
 			"@apptypes/*": ["src/apptypes/*"],
-			"@interfaces/*": ["src/interfaces/*"]
+			"@interfaces/*": ["src/interfaces/*"],
+			"@utils/*": ["src/utils/*"]
 		},
 		"lib": [
 			"esnext",

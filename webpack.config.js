@@ -21,6 +21,7 @@ module.exports = {
 			'@composables': path.resolve(__dirname, './src/composables'),
 			'@apptypes': path.resolve(__dirname, './src/apptypes'),
 			'@interfaces': path.resolve(__dirname, './src/interfaces'),
+			'@utils': path.resolve(__dirname, './src/utils'),
 		},
 		extensions: ['.js', '.ts'],
 	},
