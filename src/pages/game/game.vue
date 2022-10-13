@@ -2,10 +2,15 @@
 	<MainTemplate>
 		<template #game-field>
 			<div
-				v-for="(cell, index) of GAME_MATRIX"
-				:key="`cell${index}`"
+				v-for="(row, rowIndex) of GAME_MATRIX"
+				:key="`row${rowIndex}`"
 			>
-				{{ index + 1 }}
+				<span
+					v-for="(cell, cellIndex) of row"
+					:key="`cell${cellIndex}`"
+				>
+					{{ cell }}
+				</span>
 			</div>
 		</template>
 	</MainTemplate>

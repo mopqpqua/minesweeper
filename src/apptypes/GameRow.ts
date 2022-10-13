@@ -1,3 +1,3 @@
-import { Cell, BombCell, RegularCell } from '@interfaces/Cells';
+import { Cell } from '@interfaces/Cell';
 
-export type GameRow = (Cell | BombCell | RegularCell)[];
+export type GameRow = Cell[];
