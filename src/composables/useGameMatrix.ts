@@ -49,15 +49,16 @@ function enrichMatrixCells(matrix: GameMatrix, matrixSize: number): void {
 		const bottomRowSibling = matrix[coords[0] + 1] ?? null;
 		const bombRow = matrix[coords[0]];
 
-		if (topRowSibling) incrementSiblingCellsNumber(topRowSibling, coords[1]);
-		if (bottomRowSibling) incrementSiblingCellsNumber(bottomRowSibling, coords[1]);
-		incrementSiblingCellsNumber(bombRow, coords[1]);
-
 		matrix[coords[0]][coords[1]].isBomb = true;
+
+		if (topRowSibling) adjustCellsNumber(topRowSibling, coords[1]);
+		if (bottomRowSibling) adjustCellsNumber(bottomRowSibling, coords[1]);
+		adjustCellsNumber(bombRow, coords[1]);
 	}
 }
 
-function incrementSiblingCellsNumber(rowSibling: GameRow, bombIndex: number): void {
-	if (rowSibling[bombIndex - 1]) rowSibling[bombIndex - 1].number += 1;
-	if (rowSibling[bombIndex + 1]) rowSibling[bombIndex + 1].number += 1;
+function adjustCellsNumber(row: GameRow, bombIndex: number): void {
+	if (row[bombIndex - 1]) row[bombIndex - 1].number += 1;
+	if (row[bombIndex + 1]) row[bombIndex + 1].number += 1;
+	if (row[bombIndex] && !row[bombIndex].isBomb) row[bombIndex].number += 1;
 }
